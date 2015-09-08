@@ -8,12 +8,12 @@ import {
 } from "react";
 
 import {default as HeatmapEventList} from "../eventLists/HeatmapEventList";
-import {default as eventHandlerCreator} from "react-google-maps/utils/eventHandlerCreator";
-import {default as defaultPropsCreator} from "react-google-maps/utils/defaultPropsCreator";
-import {default as composeOptions} from "react-google-maps/utils/composeOptions";
-import {default as componentLifecycleDecorator} from "react-google-maps/utils/componentLifecycleDecorator";
+import {default as eventHandlerCreator} from "../utils/eventHandlerCreator";
+import {default as defaultPropsCreator} from "../utils/defaultPropsCreator";
+import {default as composeOptions} from "../utils/composeOptions";
+import {default as componentLifecycleDecorator} from "../utils/componentLifecycleDecorator";
 
-import {default as GoogleMapHolder} from "react-google-maps/creators/GoogleMapHolder";
+import {default as GoogleMapHolder} from "./GoogleMapHolder";
 
 export const heatmapControlledPropTypes  = {
 // [].map.call($0.querySelectorAll("tr>td>code"), function(it){ return it.textContent; }).filter(function(it){ return it.match(/^set/) && !it.match(/^setMap/); })

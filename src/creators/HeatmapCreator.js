@@ -26,7 +26,7 @@ export const heatmapDefaultPropTypes = defaultPropsCreator(heatmapControlledProp
 
 const heatmapUpdaters = {
     options   (options, component) { component.getHeatmap().setOptions(options); },
-    data      (data, component) { component.getHeatmap().setdata(data); },
+    data      (data, component) { component.getHeatmap().setData(data); },
 };
 
 const {eventPropTypes, registerEvents} = eventHandlerCreator(HeatmapEventList);

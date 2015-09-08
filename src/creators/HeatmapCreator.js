@@ -47,7 +47,7 @@ export default class HeatmapCreator extends Component {
 
     static _createHeatmap (mapHolderRef, heatmapProps) {
         // https://developers.google.com/maps/documentation/javascript/3.exp/reference#Heatmap
-        const heatmap = new google.maps.Heatmap(composeOptions(heatmapProps, [
+        const heatmap = new google.maps.visualization.Heatmap(composeOptions(heatmapProps, [
             // https://developers.google.com/maps/documentation/javascript/3.exp/reference#HeatmapOptions
             "data",
         ]));

@@ -49,7 +49,7 @@ export default class HeatmapCreator extends Component {
         // https://developers.google.com/maps/documentation/javascript/3.exp/reference#Heatmap
         const heatmap = new google.maps.visualization.HeatmapLayer(composeOptions(heatmapProps, [
             // https://developers.google.com/maps/documentation/javascript/3.exp/reference#HeatmapOptions
-            "data",
+            "data", "radius", "dissipating", "gradient", "opacity", "maxIntensity",
         ]));
 
         heatmap.setMap(mapHolderRef.getMap());
